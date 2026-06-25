@@ -1,7 +1,7 @@
 Topic-1
 ========
 
-This page provides details about Topic-1.
+This page provides details about Topic-1
 
 
 Pictures

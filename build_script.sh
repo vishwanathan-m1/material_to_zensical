@@ -8,13 +8,26 @@ echo "Building Documentation V1.0 ..."
 	git checkout rel/1.0
 	git pull origin rel/1.0
 	
-    # git fetch --tags --force
-	# git tag -f v9.5
-	# git push -f origin v9.5
-	# git checkout tags/v9.5
 	
 # mike deploy --push --update-aliases 1.0 latest -t 1.0
 mike deploy --push 1.0 -t 1.0
 # mike set-default --push latest 
 
 git checkout rel/1.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+    # git fetch --tags --force
+	# git tag -f v9.5
+	# git push -f origin v9.5
+	# git checkout tags/v9.5
