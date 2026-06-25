@@ -59,3 +59,18 @@ plugins:
 nav:
 - Welcome to Zensical: index.md
 - About Zensical: about.md
+- Module_1:
+  - Component_1:
+      - Topic_1: Module_1/Component_1/Content/Topic1.md
+      - Topic_2: Module_1/Component_1/Content/Topic2.md        
+      - Topic_3: Module_1/Component_1/Content/Topic3.md
+  - Component_2:
+      - Topic_1: Module_1/Component_2/Content/Topic1.md
+      - Topic_2: Module_1/Component_2/Content/Topic2.md
+- Module_2:
+  - Component_3:
+      - Topic_1: Module_2/Component_3/Content/Topic1.md
+      - Topic_2: Module_2/Component_3/Content/Topic2.md
+  - Component_4:
+      - Topic_1: Module_2/Component_4/Content/Topic1.md
+      - Topic_2: Module_2/Component_4/Content/Topic2.md

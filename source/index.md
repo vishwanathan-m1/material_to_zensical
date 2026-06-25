@@ -1,17 +1,20 @@
 # Welcome to Zensical
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## What is Zensical?
 
-## Project layout
+Zensical is a fresh take on what we envision a modern Open Source toolchain to build static sites should look like. Brought to you by the creators of Material for MkDocs – a tool trusted by more than 70,000 projects worldwide – we're building Zensical from first principles to achieve faster iteration, better authoring experience, and a modern architecture that scales with your needs.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+While currently in alpha, it's already compatible with Material for MkDocs, so that you can start building your projects with it – and we're moving fast toward feature parity, then pushing past what's possible with existing solutions today.
+
+Open Source. Free forever.
+
+## Adaptive systems for evolving ideas
+
+Zensical creates scalable Open Source systems for technical writing that always keep you in the flow
+
+
+## Zensical Documenation
+
+For full documentation visit [zensical.org](https://zensical.org/docs/get-started/).
