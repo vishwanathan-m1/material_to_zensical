@@ -1,8 +1,8 @@
-echo "merging your latest changes to main branch"
-git checkout main
-git pull origin main
-git merge rel/1.0 --no-ff -m "Merge rel/1.0 to main"
-git push origin HEAD:main --force
+# echo "merging your latest changes to main branch"
+# git checkout main
+# git pull origin main
+# git merge rel/1.0 --no-ff -m "Merge rel/1.0 to main"
+# git push origin HEAD:main --force
 
 echo "Building Documentation V1.0 ..."
 	git checkout rel/1.0
