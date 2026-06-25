@@ -8,6 +8,20 @@ use_directory_urls: false
 # Theme Configuration
 theme:
   name: material
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: lucide/sun
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: lucide/moon
+        name: Switch to light mode
 
 # Repository
 repo_url: https://github.com/vishwanathan-m1/material_to_zensical
