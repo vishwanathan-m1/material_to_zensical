@@ -2,9 +2,14 @@
 
 
 {% extends "base.html" %}
+
 {% block outdated %}
   You're not viewing the latest version.
-  <a href="{{ base_url ~ '/../latest/' ~ page.url }}">
+  {% if base_url == '.' or not base_url %}
+    <a href="../latest/{{ page.url }}">
+  {% else %}
+    <a href="{{ base_url }}/../latest/{{ page.url }}">
+  {% endif %}
     <strong>Click here to go to latest.</strong>
   </a> 
 {% endblock %}
