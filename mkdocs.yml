@@ -36,7 +36,6 @@ extra:
 # Plugins
 plugins:
   - search
-  - tags
   - mike:
       canonical_version: latest
       alias_type: redirect
