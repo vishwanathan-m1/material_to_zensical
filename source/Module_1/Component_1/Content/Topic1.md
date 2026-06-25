@@ -8,6 +8,6 @@ Pictures
 --------
 
 
-**Image for V1.0**
+**Image for V2.0**
 
 ![](./../Images/Lint1.png)
