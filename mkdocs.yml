@@ -1,11 +1,47 @@
+#Project Information
 site_name: Zensical Docs 
 site_url: https://github.com/vishwanathan-m1/material_to_zensical
 docs_dir: source
-site_dir: docs
+# site_dir: docs
 use_directory_urls: false
-theme:
-  name: material  
+
+# Theme Configuration
+# theme:
+#   name: material
+
 # Repository
 repo_url: https://github.com/vishwanathan-m1/material_to_zensical
 repo_name: vishwanathan-m1/material_to_zensical
 edit_uri: ""
+
+# Markdown Extensions
+markdown_extensions:
+  - toc:
+      title: On this page
+
+# Copyright
+copyright: >-
+  Copyright &copy; 2026, HCL Technologies Limited
+
+
+# Extras
+extra:
+  homepage: https://help.hcl-software.com/verse_onprem/
+  social:
+    - icon: fontawesome/brands/github
+      link: https://git.cwp.pnp-hcl.com/CWPdoc
+  version:
+    provider: mike
+
+# Plugins
+plugins:
+  - search
+  - tags
+  - mike:
+      canonical_version: latest
+      alias_type: redirect
+
+# Navigation
+nav:
+- Welcome to Zensical: index.md
+- About Zensical: about.md

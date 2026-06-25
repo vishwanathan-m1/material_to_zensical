@@ -1,6 +1,3 @@
-*/.venv/*
-.venv/bin/*
-.venv/
 *.DS_Store
 .DS_Store
 _site/
@@ -8,15 +5,10 @@ site/*
 .jekyll-metadata
 *-cache/
 /.vscode/settings.json
-/docs/95/docs/documentation/sitemap.xml.gz
-/docs/docs/documentation/sitemap.xml.gz
 */sitemap.xml
 */sitemap.xml.gz
 */sitemap.xml
 */sitemap.xml.gz
 */sitemap.xml
 */sitemap.xml.gz
-*/search/search_index.json
-*/search/search_index.json
-*/search/search_index.json
-*/docs/search.json
+**/.DS_Store
