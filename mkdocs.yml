@@ -14,14 +14,14 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:
-        icon: lucide/sun
+        icon: octicons/sun-16
         name: Switch to dark mode
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
-        icon: lucide/moon
+        icon: octicons/moon-16
         name: Switch to light mode
 
 # Repository
