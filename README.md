@@ -12,6 +12,6 @@
 
 - GitHub repository link: [https://github.com/vishwanathan-m1/material_to_zensical](https://github.com/vishwanathan-m1/material_to_zensical)
 
-- Latest live document site link: [vishwanathan-m1.github.io/material_to_zensical/](vishwanathan-m1.github.io/material_to_zensical/)
+- Latest live document site link: [https://vishwanathan-m1.github.io/material_to_zensical](https://vishwanathan-m1.github.io/material_to_zensical)
 
 ![](./source/Resources/Images/mat_zen.png)
