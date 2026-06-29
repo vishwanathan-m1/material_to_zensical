@@ -1,6 +1,3 @@
-<!-- Elements added to main will be displayed on all pages -->
-
-
 
 <!doctype html>
 <html lang="en" class="no-js">
@@ -1022,6 +1019,9 @@
               
               <article class="md-content__inner md-typeset">
                 
+  
+  <div id="mkdocs-page-path-tracker" data-path="Module_1/Component_1/Content/Topic3.html" style="display:none;"></div>
+  
                   
 
 
@@ -1043,6 +1043,7 @@
 
 
                 
+
               </article>
             </div>
           
@@ -1102,8 +1103,57 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
+  
       <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
+  <script>
+    (function() {
+      // Prevents binding multiple duplicated listeners if the script block re-executes
+      if (window.mkdocsVersionInterceptorAttached) return;
+      window.mkdocsVersionInterceptorAttached = true;
+
+      // Intercept version dropdown clicks at the capture phase (true) to override theme defaults
+      document.addEventListener("click", function(event) {
+        var link = event.target.closest(".md-version__link");
+        if (!link) return;
+
+        // Immediately halt the theme's built-in redirect logic
+        event.preventDefault();
+        event.stopPropagation();
+
+        // Safely fetch the topic path from the active DOM tracker
+        var tracker = document.getElementById("mkdocs-page-path-tracker");
+        var pagePath = tracker ? tracker.getAttribute("data-path") : "";
+        
+        var baseHref = link.getAttribute("href");
+        if (!baseHref) return;
+        
+        if (!baseHref.endsWith("/")) {
+          baseHref += "/";
+        }
+
+        // Construct the full path to the topic inside the chosen version
+        var targetUrl = baseHref + pagePath;
+
+        // Perform a quick asynchronous background validation check
+        fetch(targetUrl, { method: 'GET' })
+          .then(function(response) {
+            // If the server confirms the topic exists (Status 200), route directly to it
+            if (response.ok) {
+              window.location.href = targetUrl;
+            } else {
+              // If it returns a 404 or any error code, fall back to that version's home page
+              window.location.href = baseHref;
+            }
+          })
+          .catch(function() {
+            // Safety fallback to the version home page if network drops or CORS blocks testing
+            window.location.href = baseHref;
+          });
+      }, true); // The 'true' flag activates the capture phase to bypass theme scripts safely
+    })();
+  </script>
+
   </body>
 </html>
