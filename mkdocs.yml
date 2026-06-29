@@ -1,6 +1,6 @@
 #Project Information
 site_name: Zensical Docs 
-site_url: https://github.com/vishwanathan-m1/material_to_zensical
+site_url: https://github.com/vishwanathan-m1/material_to_zensical/
 docs_dir: source
 # site_dir: docs
 use_directory_urls: false
