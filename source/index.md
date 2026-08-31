@@ -1,4 +1,4 @@
-# Welcome to Zensical
+# Welcome to Zensical.
 
 
 
